@@ -1,12 +1,169 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  /* Default Material 3 Expressive Dark Palette — Pixel Sapphire */
+  --m3-primary: #93C5FD;
+  --m3-on-primary: #0B2559;
+  --m3-primary-container: #1E3A8A;
+  --m3-on-primary-container: #DBEAFE;
+  --m3-secondary: #A5B4FC;
+  --m3-secondary-container: #312E81;
+  --m3-on-secondary-container: #E0E7FF;
+  --m3-tertiary: #D8B4FE;
+  --m3-tertiary-container: #4C1D95;
+  --m3-on-tertiary-container: #F3E8FF;
+  --m3-surface: #090D16;
+  --m3-surface-dim: #060911;
+  --m3-surface-container-low: #111726;
+  --m3-surface-container: #161F33;
+  --m3-surface-container-high: #1E2942;
+  --m3-surface-container-highest: #283554;
+  --m3-on-surface: #F1F5F9;
+  --m3-on-surface-variant: #94A3B8;
+  --m3-outline: #334155;
+  --m3-outline-variant: #1E293B;
+  --m3-glow-primary: rgba(59, 130, 246, 0.32);
+  --m3-glow-tertiary: rgba(139, 92, 246, 0.25);
+
+  /* Expressive Spring Physics Curves */
+  --m3-easing-expressive: cubic-bezier(0.22, 1.25, 0.36, 1);
+  --m3-easing-standard: cubic-bezier(0.2, 0, 0, 1);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--m3-surface);
+    color: var(--m3-on-surface);
   }
+
+  body {
+    background-color: var(--m3-surface);
+    color: var(--m3-on-surface);
+    transition: background-color 350ms var(--m3-easing-standard), color 350ms var(--m3-easing-standard);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Material 3 Expressive Utility Classes */
+.m3-app-shell {
+  background-color: var(--m3-surface);
+  color: var(--m3-on-surface);
+  transition: background-color 350ms var(--m3-easing-standard), color 350ms var(--m3-easing-standard);
+}
+
+.m3-surface-low {
+  background-color: var(--m3-surface-container-low);
+  color: var(--m3-on-surface);
+  border-color: var(--m3-outline-variant);
+}
+
+.m3-surface-container {
+  background-color: var(--m3-surface-container);
+  color: var(--m3-on-surface);
+  border-color: var(--m3-outline-variant);
+}
+
+.m3-surface-high {
+  background-color: var(--m3-surface-container-high);
+  color: var(--m3-on-surface);
+  border-color: var(--m3-outline);
+}
+
+.m3-surface-highest {
+  background-color: var(--m3-surface-container-highest);
+  color: var(--m3-on-surface);
+  border-color: var(--m3-outline);
+}
+
+.m3-primary-pill {
+  background-color: var(--m3-primary);
+  color: var(--m3-on-primary);
+  border-radius: 9999px;
+  transition:
+    transform 320ms var(--m3-easing-expressive),
+    border-radius 320ms var(--m3-easing-expressive),
+    box-shadow 320ms var(--m3-easing-standard),
+    background-color 250ms var(--m3-easing-standard);
+}
+
+.m3-primary-pill:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 32px -8px var(--m3-glow-primary);
+}
+
+.m3-primary-pill:active {
+  transform: translateY(0) scale(0.97);
+  border-radius: 1.15rem;
+}
+
+.m3-tonal-pill {
+  background-color: var(--m3-primary-container);
+  color: var(--m3-on-primary-container);
+  border-radius: 9999px;
+  transition:
+    transform 320ms var(--m3-easing-expressive),
+    border-radius 320ms var(--m3-easing-expressive),
+    background-color 250ms var(--m3-easing-standard);
+}
+
+.m3-tonal-pill:hover {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.m3-tonal-pill:active {
+  transform: scale(0.97);
+  border-radius: 1.15rem;
+}
+
+.m3-card-expressive {
+  background-color: var(--m3-surface-container);
+  color: var(--m3-on-surface);
+  border: 1px solid var(--m3-outline-variant);
+  border-radius: 2rem;
+  transition:
+    transform 380ms var(--m3-easing-expressive),
+    border-radius 380ms var(--m3-easing-expressive),
+    border-color 280ms var(--m3-easing-standard),
+    background-color 280ms var(--m3-easing-standard),
+    box-shadow 380ms var(--m3-easing-standard);
+}
+
+.m3-card-expressive:hover {
+  border-radius: 2.5rem;
+  border-color: var(--m3-outline);
+  background-color: var(--m3-surface-container-high);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -16px var(--m3-glow-primary);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--m3-surface-dim);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--m3-surface-container-highest);
+  border-radius: 9999px;
+  border: 2px solid var(--m3-surface-dim);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--m3-primary);
 }
