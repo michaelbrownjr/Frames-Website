@@ -19,6 +19,7 @@ import {
   Zap,
   FileText,
   Shield,
+  Award,
 } from 'lucide-react';
 import {
   M3_SPRING_EXPRESSIVE,
@@ -285,7 +286,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       {/* =====================================================================
           SECTION 1: EXPRESSIVE HERO SECTION
          ===================================================================== */}
-      <section className="relative pt-10 pb-20 sm:pt-16 sm:pb-28 overflow-hidden">
+      <section className="relative pt-28 pb-20 sm:pt-32 sm:pb-28 overflow-hidden">
         {/* Ambient M3 Expressive Stage Lighting Blobs */}
         <div
           className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[44rem] h-[28rem] rounded-full blur-3xl opacity-60"
@@ -1017,6 +1018,75 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                   Managed securely by Google Play
                 </span>
               </div>
+            </div>
+          </div>
+
+          {/* Commercial, Editorial & Social Media Rights Callout */}
+          <div
+            className="rounded-[32px] p-6 sm:p-8 border mb-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6"
+            style={{
+              backgroundColor: 'var(--m3-surface-container)',
+              borderColor: 'var(--m3-outline-variant)',
+            }}
+          >
+            <div className="flex items-start gap-4 sm:gap-5 max-w-3xl">
+              <div
+                className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 mt-0.5"
+                style={{
+                  backgroundColor: 'var(--m3-secondary-container)',
+                  color: 'var(--m3-on-secondary-container)',
+                }}
+              >
+                <Award className="w-6 h-6" />
+              </div>
+              <div>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span
+                    className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full"
+                    style={{
+                      backgroundColor: 'var(--m3-secondary-container)',
+                      color: 'var(--m3-on-secondary-container)',
+                    }}
+                  >
+                    COMMERCIAL &amp; CREATOR LICENSE
+                  </span>
+                  <span
+                    className="text-xs font-bold"
+                    style={{ color: 'var(--m3-primary)' }}
+                  >
+                    Royalty-Free • No Attribution Required
+                  </span>
+                </div>
+                <h3 className="text-lg sm:text-xl font-extrabold mb-1.5">
+                  100% Cleared for Commercial, Marketing &amp; Social Media Use
+                </h3>
+                <p
+                  className="text-sm sm:text-base leading-relaxed"
+                  style={{ color: 'var(--m3-on-surface-variant)' }}
+                >
+                  Every framed screenshot and screen recording you export belongs 100% to you—cleared
+                  for personal, editorial, developer advocacy, and commercial or brand marketing use
+                  across X, Threads, Reddit, YouTube, press kits, and app store listings with zero
+                  watermarks and no attribution required.
+                </p>
+              </div>
+            </div>
+
+            <div className="shrink-0">
+              <button
+                type="button"
+                onClick={() => setCurrentPage?.('terms', 'tos-section-2')}
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm font-extrabold border transition-transform hover:scale-[1.02] active:scale-95 cursor-pointer"
+                style={{
+                  backgroundColor: 'var(--m3-primary-container)',
+                  color: 'var(--m3-on-primary-container)',
+                  borderColor: 'var(--m3-outline-variant)',
+                }}
+              >
+                <FileText className="w-4 h-4" />
+                <span>Read Full License in Terms</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
           </div>
 

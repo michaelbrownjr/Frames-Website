@@ -206,13 +206,16 @@ export const TermsOfService: React.FC<TermsOfServiceProps> = ({ setCurrentPage }
             install, and use the App on Android or ChromeOS devices that you own or control.
           </p>
           <p>
-            <strong style={{ color: 'var(--m3-on-surface)' }}>Express Commercial & Editorial Output License:</strong>{' '}
-            You are expressly permitted to publish, monetize, broadcast, and distribute the framed screenshots, video
-            mockups, and visual compositions you export using the App for both personal and commercial purposes—including
-            on social media, monetized YouTube videos, technology journalism, client portfolios, press kits, marketing
-            materials, and Google Play Store or Apple App Store promotional listings—provided that you do not extract,
-            rip, or redistribute the underlying raw device frame vector assets, 3D meshes, or shader templates as a
-            standalone or competing mockup/framing product, asset pack, or template library.
+            <strong style={{ color: 'var(--m3-on-surface)' }}>Express Commercial &amp; Editorial Output License:</strong>{' '}
+            You are expressly granted a royalty-free, worldwide, perpetual right to publish, monetize, broadcast, and
+            distribute the framed screenshots, screen recordings, video mockups, and visual compositions you export
+            using the App for both personal and commercial purposes—with no attribution required (though always
+            appreciated). This includes individual, press, developer advocacy, and corporate or brand use across social
+            media (such as X, Threads, Reddit, YouTube, LinkedIn, and Instagram), monetized videos, technology
+            journalism, client portfolios, press kits, marketing materials, and Google Play Store or Apple App Store
+            promotional listings—provided that you do not extract, rip, or redistribute the underlying raw device frame
+            vector assets, 3D meshes, or shader templates as a standalone or competing mockup/framing product, asset
+            pack, or template library.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -244,7 +247,13 @@ export const TermsOfService: React.FC<TermsOfServiceProps> = ({ setCurrentPage }
                 </li>
                 <li className="flex items-start gap-2">
                   <span style={{ color: 'var(--m3-primary)' }}>•</span>
-                  <span>Press kits, journalism, documentation, and social media showcases</span>
+                  <span>
+                    Corporate, brand, and community-engagement posts on X, Threads, Reddit, LinkedIn, and Instagram
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span style={{ color: 'var(--m3-primary)' }}>•</span>
+                  <span>Press kits, journalism, developer advocacy, documentation, and social showcases (no attribution required)</span>
                 </li>
               </ul>
             </div>
