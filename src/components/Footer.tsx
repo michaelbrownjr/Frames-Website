@@ -81,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', setCurrent
                 className="w-12 h-12 rounded-2xl overflow-hidden border shadow-md shrink-0"
               >
                 <img
-                  src="/assets/pixel-10-icon.jpeg"
+                  src="/assets/pixel-10-icon.jpeg?v=2"
                   alt="Frames for Pixel™ Icon"
                   className="w-full h-full object-cover"
                 />
@@ -118,7 +118,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', setCurrent
                 className="inline-block transition-transform hover:scale-105 active:scale-95"
               >
                 <img
-                  src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+                  src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png?v=2"
                   alt="Get it on Google Play"
                   className="h-12 w-auto"
                 />

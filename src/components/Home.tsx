@@ -313,7 +313,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                 }}
               >
                 <img
-                  src="/assets/pixel-10-icon.jpeg"
+                  src="/assets/pixel-10-icon.jpeg?v=2"
                   alt="Frames for Pixel Icon"
                   className="w-5 h-5 rounded-md object-cover"
                 />
@@ -367,7 +367,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                   aria-label="Get Frames for Pixel on Google Play"
                 >
                   <img
-                    src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+                    src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png?v=2"
                     alt="Get it on Google Play"
                     className="h-14 sm:h-16 w-auto object-contain drop-shadow-md"
                   />
@@ -443,7 +443,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                     }}
                   >
                     <img
-                      src="/assets/fold-photo.png"
+                      src="/assets/fold-photo.png?v=2"
                       alt="Pixel Pro Fold framed showcase from Frames for Pixel"
                       className="w-full h-auto object-cover block"
                     />
@@ -462,7 +462,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                     }}
                   >
                     <img
-                      src="/assets/phone-photo.png"
+                      src="/assets/phone-photo.png?v=2"
                       alt="Pixel Flagship Phone framed showcase from Frames for Pixel"
                       className="w-full h-auto object-cover block"
                     />
@@ -1009,7 +1009,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                   className="inline-flex items-center transition-transform hover:scale-[1.03] active:scale-[0.98]"
                 >
                   <img
-                    src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+                    src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png?v=2"
                     alt="Get it on Google Play"
                     className="h-12 w-auto object-contain drop-shadow-md"
                   />
@@ -1102,7 +1102,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
               <div className="lg:col-span-7">
                 <div className="flex items-center gap-3 mb-4">
                   <img
-                    src="/assets/pixel-10-icon.jpeg"
+                    src="/assets/pixel-10-icon.jpeg?v=2"
                     alt="Frames for Pixel Logo"
                     className="w-12 h-12 rounded-2xl object-cover shadow-md"
                   />
@@ -1173,7 +1173,7 @@ export const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                   className="inline-flex items-center transition-transform hover:scale-105 active:scale-95"
                 >
                   <img
-                    src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+                    src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png?v=2"
                     alt="Get it on Google Play"
                     className="h-16 w-auto object-contain drop-shadow-md"
                   />

@@ -151,7 +151,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
             className="relative w-10 h-10 rounded-[14px] overflow-hidden border shrink-0 bg-slate-900"
           >
             <img
-              src="/assets/pixel-10-icon.jpeg"
+              src="/assets/pixel-10-icon.jpeg?v=2"
               alt="Frames for Pixel™ App Icon"
               className="w-full h-full object-cover"
             />
@@ -403,7 +403,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
             className="hidden sm:inline-flex items-center transition-transform hover:scale-105 active:scale-95 shrink-0"
           >
             <img
-              src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+              src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png?v=2"
               alt="Get it on Google Play"
               className="h-10 w-auto object-contain"
             />
@@ -541,7 +541,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
                 className="inline-flex items-center justify-center transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 <img
-                  src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png"
+                  src="/assets/GetItOnGooglePlay_Badge_Web_color_English.png?v=2"
                   alt="Get it on Google Play"
                   className="h-12 w-auto object-contain drop-shadow-md"
                 />
